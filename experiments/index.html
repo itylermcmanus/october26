@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	
+	<link rel="stylesheet" href="css/main.css" />
+	<script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
+	<script src="js/script.js"></script>
+
+</head>
+<body>
+
+	<div class="skrollr-container">
+		<div class = "sections">
+
+		<div id="section1" class="section"
+		data-0="opacity:0;"
+		data-1000p="opacity:1;"> 
+		<img src="images/1.jpg">
+		</div>
+	
+		<div id="box1"
+		data-0="transform: scale(10,10);"
+		data-100p="transform: scale(5,5);"
+		data-400p="transform: scale(3,3);"
+		data-1000p="transform: scale(1,1);">
+		<img src="images/2.jpg">
+		</div>
+
+		<div id="box2"
+		data-0="opacity:0"
+		data-990p="opacity:0"
+		data-1000p="opacity:1"
+		data-1100p="transform: scale(10,10);"
+		data-1800p="transform: scale(5,5);"
+		data-2500p="transform: scale(1,1);">
+		<img src="images/3.jpg">
+		</div>
+
+		<div id="box3"
+		data-0="opacity:0;"
+		data-990p="opacity:0;"
+		data-1800p="opacity:1;"
+		data-2500p="transform: scale(10,10);"
+		data-2800p="transform: scale(5,5);"
+		data-3000p="transform: scale(1,1);">
+		<img src="images/4.jpg">
+		</div>
+
+		<div id="box4"
+		data-0="opacity:0;"
+		data-990p="opacity:0;"
+		data-2500p="opacity:1;"
+		data-2800p="transform: scale(10,10);"
+		data-3000p="transform: scale(5,5);"
+		data-3400p="transform: scale(1,1);">
+		<img src="images/5.jpg">
+		</div>
+
+		
+	<div class="next"> <a href="002.html"> Next </a>
+	</div>
+
+	</div>
+</div>
+
+
+<script src="js/skrollr.min.js">
+</script>
+
+<script type="text/javascript">
+	var s = skrollr.init({
+	render: function(data) {
+	//Debugging - Log the current scroll position.
+	console.log(data.curTop);
+}
+});
+</script>
+
+</body>
+</html>
